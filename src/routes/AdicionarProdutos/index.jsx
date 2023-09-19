@@ -1,9 +1,12 @@
+import { useNavigate} from "react-router-dom"
 import { useState } from "react";
 import { ListaProdutos } from "../../components/ListaProdutos";
 
 export default function AdicionarProdutos(){
 
     document.title = "ADICIONAR PRODUTO"
+
+    const navigate = useNavigate();
 
     const novoProdutoId = Math.max(...ListaProdutos.map((produto) => produto.id)) + 1
 
@@ -28,6 +31,8 @@ export default function AdicionarProdutos(){
         e.preventDefault();
         
         ListaProdutos.push(novoProduto)
+
+        navigate("/produtos");
     }
 
     return(
