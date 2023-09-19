@@ -5,6 +5,10 @@ import { ListaProdutos } from "../../components/ListaProdutos";
 export default function AdicionarProdutos(){
 
     document.title = "ADICIONAR PRODUTO"
+    // Gabriel Francisco Lobo - rm99708
+    // Juan Godoy - rm:551408
+    // Ivan Rangel Pestana Marcolin - rm551005
+
 
     const navigate = useNavigate();
 
