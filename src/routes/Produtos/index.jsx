@@ -10,7 +10,7 @@ export default function Produto(){
 
     return(
         <>
-          <h1>Produtos Informáticos - FIAPO</h1>
+          <h1>Produtos Informáticos</h1>
           <div>
             <Link to={"/adicionar/produtos"}>
               <button>Adicionar novo produto</button>
